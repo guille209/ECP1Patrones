@@ -1,10 +1,12 @@
 package es.upm.miw.pd.vehiculos.modelos;
 
+import java.util.ArrayList;
+
 public class GestorVehiculos {
-	private Vehiculo[] vehiculos = new Vehiculo[3];
+	private ArrayList<Vehiculo> vehiculos = new ArrayList();
 
 	public void añadirVehiculo(Vehiculo vehiculo) {
-
+		vehiculos.add(vehiculo);
 	}
 
 	public void mostrarVehiculos() {
@@ -12,7 +14,9 @@ public class GestorVehiculos {
 			System.out.println(vehiculo.toString());
 		}
 	}
-	
 
+	public int darPrecio(int id, int diasAlquiler) {
+		return 0;
+	}
 
 }
