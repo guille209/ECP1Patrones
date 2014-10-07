@@ -32,7 +32,7 @@ public class Coche extends Vehiculo {
 		// TODO Auto-generated method stub
 		return "Coche \n " + "Id: " + this.identificador + "\n"
 				+ "Descripcion: " + this.descripcion + "\n"
-				+ "Precio Alquiler: " + this.categoria + "\n" + "Categoria: "
+				+ "Precio Alquiler: " + this.categoria.value + "\n" + "Categoria: "
 				+ this.categoria;
 	}
 

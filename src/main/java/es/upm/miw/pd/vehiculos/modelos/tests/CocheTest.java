@@ -21,16 +21,17 @@ public class CocheTest {
 	@Test
 	public void testCalcularPrecio() {
 		int dias = 2;
-		assertEquals(10.0,coche.calcularPrecio(dias));
+		assertEquals(10.0,coche.calcularPrecio(dias),10e-3);
 	}
 
 	@Test
 	public void testToString() {
 		String msg="Coche \n " + "Id: 123\n"
 				+ "Descripcion: desc\n"
-				+ "Precio Alquiler: 99\n"
+				+ "Precio Alquiler: 10\n"
 				+ "Categoria: A";
 		assertEquals(msg,coche.toString());
 	}
+
 
 }

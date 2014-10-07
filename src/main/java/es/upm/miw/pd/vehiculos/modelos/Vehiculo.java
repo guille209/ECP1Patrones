@@ -6,6 +6,8 @@ public abstract class Vehiculo {
 
 	public Vehiculo(int identificador, String descripcion) {
 		// TODO Auto-generated constructor stub
+		this.identificador = identificador;
+		this.descripcion = descripcion;
 
 	}
 
