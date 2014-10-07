@@ -27,7 +27,7 @@ public class Moto extends Vehiculo {
 	public String toString() {
 		// TODO Auto-generated method stub
 
-		return "Coche \n " + "Id: " + this.identificador + "\n"
+		return "Moto \n " + "Id: " + this.identificador + "\n"
 				+ "Descripcion: " + this.descripcion;
 	}
 

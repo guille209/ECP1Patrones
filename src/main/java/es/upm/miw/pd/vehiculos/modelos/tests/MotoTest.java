@@ -27,7 +27,7 @@ public class MotoTest {
 
 	@Test
 	public void testToString() {
-		String msg="Coche \n " + "Id: " + moto.identificador + "\n"
+		String msg="Moto \n " + "Id: " + moto.identificador + "\n"
 				+ "Descripcion: " + moto.descripcion;
 		assertEquals(msg,moto.toString());
 	}

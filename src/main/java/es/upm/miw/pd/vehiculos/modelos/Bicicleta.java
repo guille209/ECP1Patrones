@@ -4,8 +4,7 @@ public class Bicicleta extends Vehiculo {
 	public static final double primerPrecio = 3.0;
 	public static final double segundoPrecio = 2.0;
 
-	public Bicicleta(int identificador, String descripcion,
-			CategoriaCoche categoria) {
+	public Bicicleta(int identificador, String descripcion) {
 		super(identificador, descripcion);
 
 	}
