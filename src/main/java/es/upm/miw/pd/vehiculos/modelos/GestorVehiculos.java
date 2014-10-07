@@ -3,7 +3,7 @@ package es.upm.miw.pd.vehiculos.modelos;
 import java.util.ArrayList;
 
 public class GestorVehiculos {
-	private ArrayList<Vehiculo> vehiculos = new ArrayList();
+	private ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 
 	public void añadirVehiculo(Vehiculo vehiculo) {
 		vehiculos.add(vehiculo);
