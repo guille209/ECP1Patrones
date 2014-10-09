@@ -22,15 +22,14 @@ public class MotoTest {
 	@Test
 	public void testCalcularPrecio(){
 		int dias = 2;
-		assertEquals(8.0,moto.calcularPrecio(dias),10e-3);
+		assertEquals(8.0, moto.calcularPrecio(dias), 10e-3);
 	}
 
 	@Test
 	public void testToString() {
-		String msg="Moto \n " + "Id: " + moto.identificador + "\n"
-				+ "Descripcion: " + moto.descripcion;
-		assertEquals(msg,moto.toString());
-	}
+		String msg = "Moto \n " + "Id: 123\n" + "Descripcion: desc";
 
+		assertEquals(msg, moto.toString());
+	}
 
 }
