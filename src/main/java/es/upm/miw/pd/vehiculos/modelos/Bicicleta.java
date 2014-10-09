@@ -28,7 +28,7 @@ public class Bicicleta extends Vehiculo {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Bici \n " + "Id: " + this.identificador + "\n"
-				+ "Descripcion: " + this.descripcion + "\n";
+				+ "Descripcion: " + this.descripcion+"";
 	}
 
 }
