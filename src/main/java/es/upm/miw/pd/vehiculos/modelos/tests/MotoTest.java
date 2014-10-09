@@ -20,7 +20,7 @@ public class MotoTest {
 	}
 
 	@Test
-	public void testCalcularPrecio() {
+	public void testCalcularPrecio(){
 		int dias = 2;
 		assertEquals(8.0,moto.calcularPrecio(dias),10e-3);
 	}
