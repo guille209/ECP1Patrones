@@ -15,6 +15,11 @@ public class GestorVehiculos {
 		return vehiculos;
 	}
 
+	public Vehiculo buscarVehiculo(int id) {
+		return vehiculos.get(id);
+
+	}
+
 	public double darPrecio(int id, int diasAlquiler) {
 
 		Vehiculo vehiculo = vehiculos.get(id);
