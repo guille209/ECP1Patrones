@@ -16,11 +16,11 @@ public class Coche extends Vehiculo {
 		double precio = 0.0;
 		for (int i = 1; i <= diasAlquiler; i++) {
 			if(i>=1 && i<=3){
-				precio = categoria.value;
+				precio += categoria.value;
 			} else if(i>=4 && i<=7){
-				precio = (categoria.value)*primerDescuento;
+				precio += categoria.value*primerDescuento;
 			} else if(i<=8){
-				precio = (categoria.value)*segundoDescuento;
+				precio += categoria.value*segundoDescuento;
 				
 			}
 		}

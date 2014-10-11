@@ -15,7 +15,10 @@ public class VehiculoController {
 		gestorVehiculos.mostrarVehiculos();
 	}
 
-	public int darPrecio(int id, int diasAlquiler) {
-		return 0;
+	public void mostrarFormularioAlta(){
+		
 	}
+	 public void mostrarPrecio(int id, int diasAlquiler){
+		 gestorVehiculos.darPrecio(id,diasAlquiler);
+	 }
 }

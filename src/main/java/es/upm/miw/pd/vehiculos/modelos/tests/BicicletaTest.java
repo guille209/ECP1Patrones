@@ -23,8 +23,8 @@ public class BicicletaTest {
 
 	@Test
 	public void testToString() {
-		String msg="Bici \n " + "Id: " + bicicleta.identificador + "\n"
-				+ "Descripcion: " + bicicleta.descripcion;
+		String msg="Bici \n " + "Id: " + bicicleta.getIdentificador() + "\n"
+				+ "Descripcion: " + bicicleta.getDescripcion();
 		assertEquals(msg,bicicleta.toString());
 	}
 

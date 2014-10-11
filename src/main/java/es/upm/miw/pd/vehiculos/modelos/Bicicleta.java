@@ -30,5 +30,7 @@ public class Bicicleta extends Vehiculo {
 		return "Bici \n " + "Id: " + this.identificador + "\n"
 				+ "Descripcion: " + this.descripcion+"";
 	}
+	
+	
 
 }

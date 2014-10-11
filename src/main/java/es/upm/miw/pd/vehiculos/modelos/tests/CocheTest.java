@@ -20,8 +20,8 @@ public class CocheTest {
 
 	@Test
 	public void testCalcularPrecio() {
-		int dias = 2;
-		assertEquals(10.0,coche.calcularPrecio(dias),10e-3);
+		int dias = 4;
+		assertEquals(38.0,coche.calcularPrecio(dias),10e-3);
 	}
 
 	@Test

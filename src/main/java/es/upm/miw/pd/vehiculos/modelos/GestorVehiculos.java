@@ -1,11 +1,13 @@
 package es.upm.miw.pd.vehiculos.modelos;
 
+//En el gestor nunca un mostrar algo
 import java.util.ArrayList;
 
 public class GestorVehiculos {
 	private ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 
 	public void añadirVehiculo(Vehiculo vehiculo) {
+
 		vehiculos.add(vehiculo);
 	}
 
@@ -15,8 +17,16 @@ public class GestorVehiculos {
 		}
 	}
 
-	public int darPrecio(int id, int diasAlquiler) {
-		return 0;
+	public double darPrecio(int id, int diasAlquiler) {
+		int indice = 0;
+		double precio = 0.0;
+		do {
+			if (vehiculos.get(indice).identificador == id) {
+				precio =  vehiculos.get(indice).calcularPrecio(diasAlquiler);
+			}
+			indice++;
+		} while (indice < vehiculos.size());
+		return precio;
 	}
 
 }
