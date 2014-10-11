@@ -12,7 +12,7 @@ public class VehiculoController {
 	}
 
 	public void mostrarVehiculos() {
-		gestorVehiculos.mostrarVehiculos();
+		gestorVehiculos.obtenerVehiculos();
 	}
 
 	public void mostrarFormularioAlta(){

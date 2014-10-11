@@ -1,31 +1,27 @@
 package es.upm.miw.pd.vehiculos.modelos;
 
 //En el gestor nunca un mostrar algo
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GestorVehiculos {
-	private ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+	Map<Integer, Vehiculo> vehiculos = new HashMap<Integer, Vehiculo>();
 
 	public void añadirVehiculo(Vehiculo vehiculo) {
-
-		vehiculos.add(vehiculo);
+		vehiculos.put(vehiculo.identificador, vehiculo);
 	}
 
-	public void mostrarVehiculos() {
-		for (Vehiculo vehiculo : vehiculos) {
-			System.out.println(vehiculo.toString());
-		}
+	public Map<Integer, Vehiculo> obtenerVehiculos() {
+		return vehiculos;
 	}
 
 	public double darPrecio(int id, int diasAlquiler) {
-		int indice = 0;
-		double precio = 0.0;
-		do {
-			if (vehiculos.get(indice).identificador == id) {
-				precio =  vehiculos.get(indice).calcularPrecio(diasAlquiler);
-			}
-			indice++;
-		} while (indice < vehiculos.size());
+
+		Vehiculo vehiculo = vehiculos.get(id);
+		double precio = -1.0;
+		if (vehiculo != null) {
+			precio = vehiculo.calcularPrecio(diasAlquiler);
+		}
 		return precio;
 	}
 
