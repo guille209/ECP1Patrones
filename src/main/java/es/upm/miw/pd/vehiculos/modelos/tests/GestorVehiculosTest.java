@@ -30,7 +30,7 @@ public class GestorVehiculosTest {
 
 	@Test
 	public void testDarPrecio() {
-		Moto moto= new Moto(222, "Descripcion");
-		assertEquals(8.0,gestorVehiculos.darPrecio(222, 8),10e-3);
+		gestorVehiculos.añadirVehiculo(new Moto(222, "Descripcion"));
+		assertEquals(8.0,gestorVehiculos.darPrecio(222, 2),10e-3);
 	}
 }
