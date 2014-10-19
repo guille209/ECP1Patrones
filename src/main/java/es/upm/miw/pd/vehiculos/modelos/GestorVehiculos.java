@@ -11,11 +11,12 @@ public class GestorVehiculos {
 		vehiculos.put(vehiculo.identificador, vehiculo);
 	}
 
-	public Map<Integer, Vehiculo> obtenerVehiculos() {
-		return vehiculos;
+	public String obtenerVehiculos() {
+		return vehiculos.toString();
 	}
 
 	public Vehiculo buscarVehiculo(int id) {
+		assert vehiculos.get(id)!=null : "Vehiculo no añadido";
 		return vehiculos.get(id);
 
 	}
