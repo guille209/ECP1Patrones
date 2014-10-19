@@ -1,6 +1,6 @@
 package es.upm.miw.pd.vehiculos.modelos;
 
-//En el gestor nunca un mostrar algo
+//En el gestor nunca un metodo llamado mostrar algo
 import java.util.HashMap;
 import java.util.Map;
 
